@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yoga Facilitators</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Yoga Facilitators</h1>
+</header>
+
+<nav>
+  <a href="V4U.html">Home</a>
+  <a href="music.html">Music</a>
+  <a href="dance.html">Dance</a>
+  <a href="yoga.html">Yoga</a>
+  <a href="fitness.html">Fitness</a>
+  <a href="meditation.html">Meditation</a>
+</nav>
+
+<section>
+  <h2>Explore our talented Yoga facilitators ready to guide your passion.</h2>
+  <div class="facilitator-list">
+    <div class="facilitator">
+      <img src="https://via.placeholder.com/300x180?text=Music+Mentor+1" alt="Facilitator 1">
+      <h3>William</h3>
+      <p> Yoga Expert – 2 years experience</p>
+    </div>
+    <div class="facilitator">
+      <img src="https://via.placeholder.com/300x180?text=Music+Mentor+2" alt="Facilitator 2">
+      <h3>William Sam</h3>
+      <p>National Level yoga performer – 7 years experience</p>
+    </div>
+    <div class="facilitator">
+      <img src="https://via.placeholder.com/300x180?text=Music+Mentor+3" alt="Facilitator 3">
+      <h3>Dilshana D</h3>
+      <p>Yoga Expert – 3 years experience</p>
+    </div>
+  </div>
+
+  <form onsubmit="confirmBooking(event)">
+    <h3>Book a Session</h3>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="date" name="date" required>
+    <select name="time" required>
+      <option value="">Select Time</option>
+      <option>08:00 AM</option>
+      <option>10:00 AM</option>
+      <option>02:00 PM</option>
+      <option>04:00 PM</option>
+    </select>
+    <button type="submit">Confirm Booking</button>
+    <p id="confirmation-message" style="color: green; font-weight: bold;"></p>
+  </form>
+</section>
+
+<footer>
+  <p>Contact Us: info@v4u.com | +91 98765 43210</p>
+  <p>&copy; 2025 V4U – We For You</p>
+</footer>
+
+<script>
+  function confirmBooking(event) {
+    event.preventDefault();
+    document.getElementById("confirmation-message").textContent = "Class Confirmed!";
+  }
+</script>
+
+</body>
+</html>
